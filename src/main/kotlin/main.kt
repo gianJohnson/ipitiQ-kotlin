@@ -234,7 +234,7 @@ fun test(hosts: List<Provider>, loadBalancer: LoadBalancer) {
     loadBalancer.checkProvidersScheduler()
     //exclude first host manually
     loadBalancer.excludeProviderById(hosts[0].get())
-    //activate scan for excluded host
+    
     while (true) {
         try {
             runBlocking {
